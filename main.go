@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"bytes"
-	"io"
 	"os"
 	"os/exec"
 	"strings"
@@ -105,18 +104,9 @@ func createSplitter(separators string) bufio.SplitFunc {
 
 		if atEOF {
 			token = buffer
-			err = io.EOF
+			err = bufio.ErrFinalToken
 		}
 
 		return
 	}
-}
-
-func indexOf(arr []string, toFind string) int {
-	for i, s := range arr {
-		if s == toFind {
-			return i
-		}
-	}
-	return -1
 }
