@@ -5,7 +5,7 @@ This CLI tool can take from a pipe any list, and iterates over it using any comm
 
 Like `xargs` for the 21st Century.
 
-[Check the docs](samsmi7h.com/oss/foreach)
+[Check the docs](https://samsmi7h.com/oss/foreach)
 
 ![A shell screenshot](./assets/imgs/shell.png)
 
